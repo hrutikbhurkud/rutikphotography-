@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rutik Photography — Pre-Wedding, Engagement, Wedding, Birthday &amp; Model Shoots</title>
+  <meta name="description" content="Rutik Photography in Vikramgad, Palghar — Capturing Your Forever. Pre-Wedding (₹4,999+), Engagement (₹10,000–₹15,000), Wedding (₹24,999+), Birthday &amp; Model Shoots." />
+
+  <!-- WhatsApp / Social Link Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rutik Photography — Complete Photography Packages" />
+  <meta property="og:description" content="Pre-Wedding, Engagement (₹10,000–₹15,000), Wedding, Birthday &amp; Model shoots. Tap to view packages &amp; book on WhatsApp." />
+  <meta property="og:image" content="photos/wedding3.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-cream: #f5efe6;
+      --card-cream: #fbf8f3;
+      --olive-dark: #2c3524;
+      --olive-mid: #435036;
+      --gold: #9e7d3d;
+      --gold-light: #c5a35c;
+      --text-dark: #242424;
+      --text-muted: #5a554c;
+      --border-tan: #d8ccb8;
+      --shadow-soft: 0 14px 32px rgba(44, 53, 36, 0.09);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--bg-cream);
+      background-image:
+        radial-gradient(circle at 10% 5%, #eae0d0 0%, transparent 40%),
+        radial-gradient(circle at 90% 95%, #e7dcc8 0%, transparent 40%);
+      color: var(--text-dark);
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 1.25rem; }
+
+    /* NAVBAR */
+    .navbar {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(245, 239, 230, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(158, 125, 61, 0.22);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 0; gap: 1rem; }
+    .nav-brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; color: var(--olive-dark); }
+    .nav-brand svg { width: 30px; height: 26px; flex-shrink: 0; }
+    .nav-brand-text { font-family: 'Great Vibes', cursive; font-size: 1.95rem; line-height: 1; }
+    .nav-links { display: flex; align-items: center; gap: 1.1rem; list-style: none; }
+    .nav-links a {
+      text-decoration: none; color: var(--text-dark); font-size: 0.76rem;
+      font-weight: 600; letter-spacing: 0.85px; text-transform: uppercase; transition: color 0.2s ease;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta { background: var(--olive-dark); color: #fff !important; padding: 0.55rem 1.15rem; border-radius: 50px; }
+    .nav-cta:hover { background: var(--gold) !important; }
+    .menu-toggle {
+      display: none; background: none; border: 1.5px solid var(--olive-dark); color: var(--olive-dark);
+      border-radius: 8px; padding: 0.35rem 0.6rem; cursor: pointer; font-size: 1.2rem; line-height: 1;
+    }
+
+    /* HERO */
+    .hero { padding: 3rem 0 3.5rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; align-items: center; gap: 2.5rem; }
+    .hero-badge {
+      display: inline-block; font-size: 0.72rem; letter-spacing: 2.5px; text-transform: uppercase;
+      color: var(--gold); border: 1px solid rgba(158, 125, 61, 0.45);
+      background: rgba(251, 248, 243, 0.7); padding: 0.35rem 0.9rem; border-radius: 50px;
+      font-weight: 600; margin-bottom: 1rem;
+    }
+    .hero-script { font-family: 'Great Vibes', cursive; font-size: clamp(2.8rem, 5vw, 4.1rem); color: var(--olive-dark); line-height: 0.95; }
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif; font-size: clamp(2.6rem, 5vw, 4rem); font-weight: 700; letter-spacing: 3px;
+      color: #6e5728; background: linear-gradient(135deg, #6e5728, #b08d45, #5e4b24);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+      line-height: 1.04; margin-bottom: 1rem;
+    }
+    .divider { display: flex; align-items: center; gap: 0.75rem; margin: 0.9rem 0 1.1rem; color: var(--gold); max-width: 320px; }
+    .divider.centered { margin-left: auto; margin-right: auto; }
+    .divider::before, .divider::after { content: ""; flex: 1; height: 1px; background: var(--gold); }
+    .hero-subtitle { font-size: 0.95rem; color: var(--text-muted); max-width: 510px; margin-bottom: 1.75rem; font-weight: 500; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-bottom: 1.75rem; }
+    .btn-primary {
+      background: var(--olive-dark); color: #fff; text-decoration: none; padding: 0.9rem 1.8rem;
+      border-radius: 50px; font-size: 0.85rem; font-weight: 700; letter-spacing: 1.1px; text-transform: uppercase;
+      display: inline-flex; align-items: center; gap: 0.5rem; border: none; cursor: pointer;
+      box-shadow: 0 10px 22px rgba(44, 53, 36, 0.2); transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .btn-primary:hover { background: var(--gold); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent; color: var(--olive-dark); text-decoration: none; padding: 0.88rem 1.65rem;
+      border-radius: 50px; font-size: 0.85rem; font-weight: 700; letter-spacing: 1.1px; text-transform: uppercase;
+      border: 1.5px solid var(--olive-dark); transition: all 0.2s ease;
+    }
+    .btn-outline:hover { background: var(--olive-dark); color: #fff; }
+    .hero-highlights { display: flex; flex-wrap: wrap; gap: 1.1rem; font-size: 0.8rem; color: var(--text-muted); font-weight: 600; }
+    .hero-highlights strong { color: var(--gold); }
+    .hero-photo { position: relative; display: flex; justify-content: center; }
+    .hero-photo::before {
+      content: ""; position: absolute; width: 100%; max-width: 380px; height: 100%;
+      border: 1.5px solid var(--gold-light); border-radius: 195px 195px 28px 28px;
+      transform: translate(12px, 12px); z-index: 0;
+    }
+    .hero-photo img {
+      position: relative; z-index: 1; width: 100%; max-width: 380px; height: 430px; object-fit: cover; object-position: top center;
+      border-radius: 190px 190px 24px 24px; border: 3px solid var(--card-cream);
+      box-shadow: 0 20px 40px rgba(44, 53, 36, 0.16);
+    }
+
+    /* SECTIONS */
+    .section { padding: 4rem 0; }
+    .section-soft {
+      background: rgba(251, 248, 243, 0.65);
+      border-top: 1px solid rgba(216, 204, 184, 0.6);
+      border-bottom: 1px solid rgba(216, 204, 184, 0.6);
+    }
+    .section-head { text-align: center; max-width: 680px; margin: 0 auto 2.5rem; }
+    .section-script { font-family: 'Great Vibes', cursive; font-size: 2.6rem; color: var(--gold); line-height: 1; }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 700; color: var(--olive-dark); letter-spacing: 1.5px; text-transform: uppercase; }
+    .section-desc { font-size: 0.92rem; color: var(--text-muted); margin-top: 0.45rem; }
+
+    /* PILLARS */
+    .pillars-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+    .pillar-card {
+      background: var(--card-cream); border: 1px solid var(--border-tan); border-radius: 16px;
+      padding: 1.5rem 1.25rem; text-align: center; box-shadow: 0 6px 18px rgba(44, 53, 36, 0.05);
+    }
+    .pillar-icon {
+      width: 44px; height: 44px; border-radius: 50%; background: rgba(158, 125, 61, 0.12); color: var(--gold);
+      display: inline-flex; align-items: center; justify-content: center; margin-bottom: 0.85rem; font-size: 1.2rem;
+    }
+    .pillar-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; color: var(--olive-dark); margin-bottom: 0.35rem; }
+    .pillar-card p { font-size: 0.83rem; color: var(--text-muted); }
+
+    /* PACKAGES */
+    .pkg-tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2.75rem; }
+    .pkg-tab-btn {
+      background: var(--card-cream); border: 1.5px solid var(--border-tan); color: var(--olive-dark);
+      padding: 0.58rem 1.15rem; border-radius: 50px; font-family: inherit; font-size: 0.76rem;
+      font-weight: 700; letter-spacing: 0.85px; text-transform: uppercase; cursor: pointer; transition: all 0.2s ease;
+    }
+    .pkg-tab-btn.active, .pkg-tab-btn:hover { background: var(--olive-dark); color: #fff; border-color: var(--olive-dark); }
+    .package-group { margin-bottom: 3.75rem; }
+    .package-group:last-of-type { margin-bottom: 0; }
+    .package-group.hidden { display: none; }
+    .group-header { text-align: center; margin-bottom: 2rem; }
+    .group-kicker { font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+    .group-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.75rem, 3.2vw, 2.35rem); color: var(--olive-dark); font-weight: 700; letter-spacing: 1px; }
+
+    .packages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem; align-items: stretch; }
+    .packages-grid.two-col { grid-template-columns: repeat(2, 1fr); max-width: 780px; margin: 0 auto; }
+    .package-card {
+      background: var(--card-cream); border: 1.5px solid var(--border-tan); border-radius: 185px 185px 18px 18px;
+      overflow: hidden; display: flex; flex-direction: column; position: relative;
+      box-shadow: var(--shadow-soft); transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .package-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(44, 53, 36, 0.14); }
+    .package-card.featured { border: 2px solid var(--gold); }
+    .popular-ribbon {
+      position: absolute; top: 18px; left: 50%; transform: translateX(-50%);
+      background: var(--gold); color: #fff; font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 1.8px; text-transform: uppercase; padding: 0.3rem 0.9rem;
+      border-radius: 50px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); z-index: 3; white-space: nowrap;
+    }
+    .arch-photo { width: 100%; height: 265px; object-fit: cover; object-position: center 20%; }
+    .badge-wrap { display: flex; justify-content: center; margin-top: -32px; position: relative; z-index: 2; }
+    .tier-badge {
+      width: 64px; height: 64px; border-radius: 50%; background: var(--olive-dark);
+      border: 3px solid var(--card-cream); display: flex; align-items: center; justify-content: center;
+      color: #fff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); font-size: 1.35rem;
+    }
+    .package-card.featured .tier-badge { background: var(--gold); }
+    .card-content { padding: 0.8rem 1.45rem 1.45rem; flex: 1; display: flex; flex-direction: column; }
+    .tier-title { font-family: 'Cormorant Garamond', serif; font-size: 1.85rem; font-weight: 700; text-align: center; color: var(--olive-dark); letter-spacing: 1.2px; line-height: 1.1; }
+    .package-card.featured .tier-title { color: var(--gold); }
+    .tier-sub { text-align: center; font-size: 0.72rem; letter-spacing: 2.4px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1.1rem; font-weight: 600; }
+    .feature-list { list-style: none; margin-bottom: 1.4rem; flex: 1; }
+    .feature-list li {
+      display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.85rem; color: var(--text-dark);
+      padding: 0.42rem 0; border-bottom: 1px dashed rgba(158, 125, 61, 0.24); font-weight: 500;
+    }
+    .feature-list li:last-child { border-bottom: none; }
+    .feature-dot { color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .price-banner {
+      display: block; text-align: center; background: var(--olive-dark); color: #fff;
+      text-decoration: none; font-size: 1.45rem; font-weight: 700; padding: 0.72rem 1rem;
+      border-radius: 12px; letter-spacing: 0.8px; transition: background 0.2s ease;
+    }
+    .price-banner:hover { background: var(--olive-mid); }
+    .package-card.featured .price-banner { background: var(--gold); }
+    .package-card.featured .price-banner:hover { background: #876930; }
+    .price-banner span {
+      display: block; font-size: 0.68rem; font-weight: 600; letter-spacing: 1.5px;
+      text-transform: uppercase; opacity: 0.92; margin-top: 2px;
+    }
+    .select-plan-btn {
+      margin-top: 0.6rem; background: transparent; border: 1px solid var(--border-tan);
+      color: var(--text-muted); padding: 0.48rem; border-radius: 8px; font-size: 0.75rem;
+      font-weight: 600; cursor: pointer; transition: all 0.2s ease; font-family: inherit;
+    }
+    .select-plan-btn:hover { border-color: var(--gold); color: var(--olive-dark); background: rgba(158, 125, 61, 0.08); }
+
+    /* QUICK SHOOT TAGS */
+    .quick-shoots-strip {
+      margin-top: 2rem; background: var(--card-cream); border: 1px solid var(--border-tan);
+      border-radius: 16px; padding: 1.35rem 1.25rem; text-align: center;
+    }
+    .quick-shoots-label {
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--olive-dark); margin-bottom: 0.85rem;
+    }
+    .quick-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.55rem; }
+    .quick-tag-btn {
+      background: var(--bg-cream); border: 1px solid var(--border-tan); color: var(--text-dark);
+      padding: 0.45rem 0.95rem; border-radius: 50px; font-family: inherit; font-size: 0.78rem;
+      font-weight: 600; cursor: pointer; transition: all 0.2s ease;
+    }
+    .quick-tag-btn:hover { background: var(--gold); color: #fff; border-color: var(--gold); }
+    .package-footnote { text-align: center; margin-top: 2.25rem; font-size: 0.85rem; color: var(--text-muted); }
+
+    /* PORTFOLIO */
+    .gallery-filters { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2rem; }
+    .filter-btn {
+      background: var(--card-cream); border: 1px solid var(--border-tan); color: var(--text-dark);
+      padding: 0.5rem 1.15rem; border-radius: 50px; font-size: 0.78rem; font-weight: 600;
+      letter-spacing: 0.8px; text-transform: uppercase; cursor: pointer; font-family: inherit; transition: all 0.2s ease;
+    }
+    .filter-btn.active, .filter-btn:hover { background: var(--olive-dark); color: #fff; border-color: var(--olive-dark); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+    .gallery-item {
+      position: relative; border-radius: 150px 150px 16px 16px; overflow: hidden;
+      border: 2px solid var(--border-tan); background: var(--card-cream); cursor: pointer;
+      aspect-ratio: 3 / 4; box-shadow: 0 10px 24px rgba(44, 53, 36, 0.08);
+    }
+    .gallery-item.hidden { display: none; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; object-position: center 18%; transition: transform 0.4s ease; }
+    .gallery-item:hover img { transform: scale(1.06); }
+    .gallery-caption {
+      position: absolute; inset: auto 0 0 0;
+      background: linear-gradient(transparent, rgba(44, 53, 36, 0.9));
+      color: #fff; padding: 1.6rem 0.9rem 0.85rem; font-size: 0.78rem; font-weight: 600;
+    }
+
+    /* PROCESS */
+    .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+    .process-step { text-align: center; padding: 1.25rem; }
+    .step-num {
+      width: 48px; height: 48px; border-radius: 50%; background: var(--olive-dark); color: var(--gold-light);
+      font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 700;
+      display: inline-flex; align-items: center; justify-content: center; margin-bottom: 0.85rem;
+    }
+    .process-step h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; color: var(--olive-dark); margin-bottom: 0.35rem; }
+    .process-step p { font-size: 0.84rem; color: var(--text-muted); }
+
+    /* BOOKING + FAQ */
+    .booking-layout { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2.25rem; align-items: start; }
+    .booking-card {
+      background: var(--card-cream); border: 1.5px solid var(--border-tan);
+      border-radius: 20px; padding: 2rem; box-shadow: var(--shadow-soft);
+    }
+    .booking-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; color: var(--olive-dark); margin-bottom: 0.35rem; }
+    .booking-card .sub { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.4rem; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.9rem; }
+    .form-group.full { grid-column: 1 / -1; }
+    .form-group label { font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--olive-dark); }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 0.75rem 0.9rem; border-radius: 10px; border: 1px solid var(--border-tan);
+      background: #fff; font-family: inherit; font-size: 0.9rem; color: var(--text-dark); outline: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold); }
+    .faq-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; color: var(--olive-dark); margin-bottom: 1rem; }
+    .faq-item { background: var(--card-cream); border: 1px solid var(--border-tan); border-radius: 12px; margin-bottom: 0.75rem; overflow: hidden; }
+    .faq-question {
+      width: 100%; text-align: left; background: none; border: none; padding: 1rem 1.15rem;
+      font-family: inherit; font-size: 0.9rem; font-weight: 600; color: var(--olive-dark);
+      display: flex; justify-content: space-between; align-items: center; gap: 1rem; cursor: pointer;
+    }
+    .faq-icon { color: var(--gold); font-size: 1.2rem; font-weight: 700; transition: transform 0.2s ease; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.25s ease; padding: 0 1.15rem; font-size: 0.84rem; color: var(--text-muted); }
+    .faq-item.open .faq-answer { max-height: 240px; padding-bottom: 1rem; }
+
+    /* FOOTER */
+    footer { background: var(--olive-dark); color: #f5efe6; padding: 3rem 0 1.75rem; }
+    .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(245, 239, 230, 0.14); }
+    .footer-brand { font-family: 'Great Vibes', cursive; font-size: 2.4rem; color: var(--gold-light); line-height: 1; margin-bottom: 0.5rem; }
+    .footer-text { font-size: 0.85rem; color: #d6cebe; max-width: 320px; }
+    .footer-col h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; color: #fff; margin-bottom: 0.75rem; letter-spacing: 1px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.45rem; font-size: 0.86rem; color: #d6cebe; }
+    .footer-col a { color: #f5efe6; text-decoration: none; transition: color 0.2s ease; }
+    .footer-col a:hover { color: var(--gold-light); }
+    .footer-bottom { padding-top: 1.25rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem; font-size: 0.78rem; color: #c7beae; }
+
+    /* LIGHTBOX & FLOATING WA */
+    .lightbox {
+      position: fixed; inset: 0; background: rgba(20, 24, 16, 0.9);
+      display: none; align-items: center; justify-content: center; padding: 1.5rem; z-index: 200;
+    }
+    .lightbox.active { display: flex; }
+    .lightbox-content { position: relative; max-width: 720px; width: 100%; text-align: center; }
+    .lightbox-content img { max-height: 80vh; margin: 0 auto; border-radius: 16px; border: 2px solid var(--gold-light); }
+    .lightbox-caption { color: #f5efe6; margin-top: 0.75rem; font-size: 0.9rem; }
+    .lightbox-close {
+      position: absolute; top: -14px; right: -10px; width: 38px; height: 38px;
+      border-radius: 50%; border: none; background: var(--gold); color: #fff; font-size: 1.4rem; cursor: pointer;
+    }
+    .floating-wa {
+      position: fixed; right: 18px; bottom: 18px; z-index: 90; background: #25d366; color: #fff;
+      text-decoration: none; padding: 0.75rem 1.15rem; border-radius: 50px; font-size: 0.82rem; font-weight: 700;
+      display: inline-flex; align-items: center; gap: 0.45rem; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+      transition: transform 0.2s ease;
+    }
+    .floating-wa:hover { transform: scale(1.05); }
+
+    /* RESPONSIVE */
+    @media (max-width: 960px) {
+      .hero-grid, .booking-layout, .footer-grid { grid-template-columns: 1fr; }
+      .hero-grid { text-align: center; }
+      .divider, .hero-subtitle { margin-left: auto; margin-right: auto; }
+      .hero-actions, .hero-highlights { justify-content: center; }
+      .packages-grid, .packages-grid.two-col { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+      .pillars-grid, .process-grid, .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 680px) {
+      .menu-toggle { display: block; }
+      .nav-links {
+        display: none; position: absolute; top: 100%; left: 0; right: 0;
+        background: var(--card-cream); border-bottom: 1px solid var(--border-tan);
+        flex-direction: column; padding: 1.25rem; gap: 1rem;
+      }
+      .nav-links.open { display: flex; }
+      .form-grid, .pillars-grid, .process-grid { grid-template-columns: 1fr; }
+      .hero-photo img { height: 360px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="#home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+          <path d="M12 16.5s-3.5-2.2-3.5-4.5a2 2 0 0 1 3.5-1.3A2 2 0 0 1 15.5 12c0 2.3-3.5 4.5-3.5 4.5z"/>
+        </svg>
+        <span class="nav-brand-text">Rutik Photography</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false">&#9776;</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#prewedding-group" data-jump-tab="prewedding">Pre-Wedding</a></li>
+        <li><a href="#engagement-group" data-jump-tab="engagement">Engagement</a></li>
+        <li><a href="#wedding-group" data-jump-tab="wedding">Wedding</a></li>
+        <li><a href="#other-shoots-group" data-jump-tab="other">Birthday &amp; Model</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#book" class="nav-cta">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-badge">Vikramgad &bull; Palghar &bull; Maharashtra</span>
+          <div class="hero-script">Capturing Every Milestone</div>
+          <h1 class="hero-title">PHOTOGRAPHY</h1>
+          <div class="divider"><span>&#10047;</span></div>
+          <p class="hero-subtitle">
+            From Pre-Wedding, Engagement &amp; Grand Wedding coverage to Birthday Celebrations, Model Portfolios, Maternity &amp; Family Events — timeless storytelling tailored for you.
+          </p>
+          <div class="hero-actions">
+            <a href="#packages" class="btn-primary">View All Packages &rarr;</a>
+            <a href="https://wa.me/917841845178?text=Hi%20Rutik%20Photography,%20I%20would%20like%20to%20enquire%20about%20booking%20a%20shoot!" target="_blank" rel="noopener noreferrer" class="btn-outline">Chat on WhatsApp</a>
+          </div>
+          <div class="hero-highlights">
+            <span><strong>&#10022;</strong> Pre-Wedding ₹4,999+</span>
+            <span><strong>&#10022;</strong> Engagement ₹10k–₹15k</span>
+            <span><strong>&#10022;</strong> Wedding, Birthday &amp; Model</span>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <img src="photos/wedding4.jpg"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=900&q=80';"
+               alt="Traditional Couple Portrait by Rutik Photography" />
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section section-soft" id="about">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-script">Capturing Your Forever</div>
+          <h2 class="section-title">Why Clients Choose Us</h2>
+          <p class="section-desc">Thoughtful posing direction, warm natural tones, and crisp storytelling for couples, families, models, and celebrations.</p>
+        </div>
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">&#9788;</div>
+            <h3>Candid &amp; Editorial</h3>
+            <p>Natural smiles at engagements, birthdays &amp; weddings, plus confident posing guidance for model shoots.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">&#9654;</div>
+            <h3>Reels &amp; Cinema</h3>
+            <p>Trendy Instagram transition reels, ring ceremony teasers, birthday edits, and wedding films.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">&#10047;</div>
+            <h3>Albums &amp; Posters</h3>
+            <p>Custom birthday &amp; save-the-date digital posters plus luxury Karizma &amp; layflat photobooks.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">&#9729;</div>
+            <h3>Fast Drive Delivery</h3>
+            <p>High-resolution edited soft copies and full RAW data options delivered cleanly on Google Drive.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="section" id="packages">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-script">Tailored For Every Occasion</div>
+          <h2 class="section-title">Photography Packages</h2>
+          <div class="divider centered"><span>&#10047;</span></div>
+          <p class="section-desc">Browse Pre-Wedding, Engagement, Wedding, Birthday Celebration, Model Shoot, and Other Shoot packages below.</p>
+        </div>
+
+        <div class="pkg-tabs" role="tablist" aria-label="Package Categories">
+          <button type="button" class="pkg-tab-btn active" data-pkg-tab="all">All Packages</button>
+          <button type="button" class="pkg-tab-btn" data-pkg-tab="prewedding">Pre-Wedding</button>
+          <button type="button" class="pkg-tab-btn" data-pkg-tab="engagement">Engagement</button>
+          <button type="button" class="pkg-tab-btn" data-pkg-tab="wedding">Wedding</button>
+          <button type="button" class="pkg-tab-btn" data-pkg-tab="other">Birthday, Model &amp; Other</button>
+        </div>
+
+        <!-- 1. PRE-WEDDING -->
+        <div class="package-group" id="prewedding-group" data-group="prewedding">
+          <div class="group-header">
+            <span class="group-kicker">Couple Shoots &amp; Reels</span>
+            <h3 class="group-title">Pre-Wedding Packages</h3>
+          </div>
+          <div class="packages-grid">
+            <article class="package-card">
+              <img class="arch-photo" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Silver Pre-Wedding Package" />
+              <div class="badge-wrap"><div class="tier-badge" aria-hidden="true">&#9830;</div></div>
+              <div class="card-content">
+                <h4 class="tier-title">SILVER</h4>
+                <div class="tier-sub">&mdash; Pre-Wedding &mdash;</div>
+                <ul class="feature-list">
+                  <li><span class="feature-dot">&#10022;</span> 20 Edited Photos (Soft Copy)</li>
+                  <li><span class="feature-dot">&#10022;</span> 1 Save the Date Poster</li>
+                  <li><span class="feature-dot">&#10022;</span> Half Day Shoot</li>
+                  <li><span class="feature-dot">&#10022;</span> 1 Location + 1 Costume Change</li>
+                </ul>
+                <a class="price-banner" href="https://wa.me/917841845178?text=Hi%20Rutik%20Photography,%20I%20want%20to%20book%20the%20Silver%20Pre-Wedding%20Package%20(%E2%82%B94,999/-)." target="_blank" rel="noopener noreferrer">
+                  ₹ 4,999/-
+                  <span>Tap to Book Silver</span>
+                </a>
+                <button type="button" class="select-plan-btn" data-package="Pre-Wedding: Silver Package (₹4,999/-)">Customize Date &amp; Location &rarr;</button>
+              </div>
+            </article>
+
+            <article class="package-card featured">
+              <span class="popular-ribbon">Most Popular</span>
+              <img class="arch-photo" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="Gold Pre-Wedding Package" />
+              <div class="badge-wrap"><div class="tier-badge" aria-hidden="true">&#9813;</div></div>
+              <div class="card-content">
+                <h4 class="tier-title">GOLD</h4>
+                <div class="tier-sub">&mdash; Pre-Wedding &mdash;</div>
+                <ul class="feature-list">
+                  <li><span class="feature-dot">&#10022;</span> 25 Edited Photos (Soft Copy)</li>
+                  <li><span class="feature-dot">&#10022;</span> 2 Reels (Up to 30 sec)</li>
+                  <li><span class="feature-dot">&#10022;</span> 1 Save the Date Poster</li>
+                  <li><span class="feature-dot">&#10022;</span> Morning + Evening Shoot</li>
+                  <li><span class="feature-dot">&#10022;</span> 2 Locations + 2 Costume Changes</li>
+                </ul>
+                <a class="price-banner" href="https://wa.me/917841845178?text=Hi%20Rutik%20Photography,%20I%20want%20to%20book%20the%20Gold%20Pre-Wedding%20Package%20(%E2%82%B99,999/-)." target="_blank" rel="noopener noreferrer">
+                  ₹ 9,999/-
+                  <span>Tap to Book Gold</span>
+                </a>
+                <button type="button" class="select-plan-btn" data-package="Pre-Wedding: Gold Package (₹9,999/-)">Customize Date &amp; Location &rarr;</button>
+              </div>
+            </article>
+
+            <article class="package-card">
+              <img class="arch-photo" src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=800&q=80" alt="Diamond Pre-Wedding Package" />
+              <div class="badge-wrap"><div class="tier-badge" aria-hidden="true">&#10022;</div></div>
+              <div class="card-content">
+                <h4 class="tier-title">DIAMOND</h4>
+                <div class="tier-sub">&mdash; Pre-Wedding &mdash;</div>
+                <ul class="feature-list">
+                  <li><span class="feature-dot">&#10022;</span> 30 Edited Photos</li>
+                  <li><span class="feature-dot">&#10022;</span> 2 Reels (Up to 30 sec)</li>
+                  <li><span class="feature-dot">&#10022;</span> 1–3 Min Cinematic Video</li>
+                  <li><span class="feature-dot">&#10022;</span> Morning + Evening Shoot</li>
+                  <li><span class="feature-dot">&#10022;</span> 1 Save the Date Poster + Reel</li>
+                  <li><span class="feature-dot">&#10022;</span> 2 Locations + 2 Costume Changes</li>
+                  <li><span class="feature-dot">&#10022;</span> All RAW Data Provided on Drive</li>
+                </ul>
+                <a class="price-banner" href="https://wa.me/917841845178?text=Hi%20Rutik%20Photography,%20I%20want%20to%20book%20the%20Diamond%20Pre-Wedding%20Package%20(%E2%82%B914,999/-)." target="_blank" rel="noopener noreferrer">
+                  ₹ 14,999/-
+                  <span>Tap to Book Diamond</span>
+                </a>
+                <button type="button" class="select-plan-btn" data-package="Pre-Wedding: Diamond Package (₹14,999/-)">Customize Date &amp; Location &rarr;</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 2. ENGAGEMENT PACKAGES (₹10,000 – ₹15,000) -->
+        <div class="package-group" id="engagement-group" data-group="engagement">
+          <div class="group-header">
+            <span class="group-kicker">Ring Ceremony &amp; Couple Celebration</span>
+            <h3 class="group-title">Engagement Packages (₹10,000 – ₹15,000)</h3>
+          </div>
+
+          <div class="packages-grid two-col">
+            <!-- CLASSIC ENGAGEMENT -->
+            <article class="package-card">
+              <img class="arch-photo" src="photos/wedding5.jpg"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80';"
+                   alt="Classic Engagement Photography Package" />
+              <div class="badge-wrap"><div class="tier-badge" aria-hidden="true">&#9825;</div></div>
+              <div class="card-content">
+                <h4 class="tier-title">CLASSIC ENGAGEMENT</h4>
+                <div class="tier-sub">&mdash; Ring Ceremony &mdash;</div>
+                <ul class="feature-list">
+                  <li><span class="feature-dot">&#10022;</span> Traditional Photo + Video (2 Crew)</li>
+                  <li><span class="feature-dot">&#10022;</span> Ring Ceremony, Family &amp; Couple Portraits</li>
+                  <li><span class="feature-dot">&#10022;</span> 100+ Color-Graded Edited Photos</li>
+                  <li><span class="feature-dot">&#10022;</span> Full-Length Edited Event Video</li>
+                  <li><span class="feature-dot">&#10022;</span> 1 Engagement Highlight Reel (30 sec)</li>
+                  <li><span class="feature-dot">&#10022;</span> Digital Delivery on Google Drive</li>
+                </ul>
+                <a class="price-banner" href="https://wa.me/917841845178?text=Hi%20Rutik%20Photography,%20I%20want%20to%20book%20the%20Classic%20Engagement%20Package%20(%E2%82%B910,000/-)." target="_blank" rel="noopener noreferrer">
+                  ₹ 10,000/-
+                  <span>Tap to Book Classic Engagement</span>
+                </a>
+                <button type="button" class="select-plan-btn" data-package="Engagement: Classic Package (₹10,000/-)">Customize Date &amp; Venue &rarr;</button>
+              </div>
+            </article>
+
+            <!-- PREMIUM ENGAGEMENT -->
+            <article class="package-card featured">
+              <span class="popular-ribbon">Most Booked</span>
+              <img class="arch-photo" src="photos/wedding1.jpg"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1741201864962-c0954eb8974a?auto=format&fit=crop&w=800&q=80';"
+                   alt="Premium Engagement Photography Package" />
+              <div class="badge-wrap"><div class="tier-badge" aria-hidden="true">&#9813;</div></div>
+              <div class="card-content">
+                <h4 class="tier-title">PREMIUM ENGAGEMENT</h4>
+                <div class="tier-sub">&mdash; Candid + Cinema &mdash;</div>
+                <ul class="feature-list">
+                  <li><span class="feature-dot">&#10022;</span> Candid + Traditional Photo &amp; Video</li>
+                  <li><span class="feature-dot">&#10022;</span> Pre-Ceremony Couple Portraits + Stage Rituals</li>
+                  <li><span class="feature-dot">&#10022;</span> 150+ Edited Photos + 1 Save-the-Date Poster</li>
+                  <li><span class="feature-dot">&#10022;</span> 2 Instagram Reels + 2–3 Min Cinematic Teaser</li>
+                  <li><span class="feature-dot">&#10022;</span> Full Event Video (Digital Copy)</li>
+                  <li><span class="feature-dot">&#10022;</span> All RAW &amp; Edited Data on Drive</li>
+                </ul>
+                <a class="price-banner" href="https://wa.me/917841845178?text=Hi%20Rutik%20Photography,%20I%20want%20to%20book%20the%20Premium%20Engagement%20Package%20(%E2%82%B915,000/-)." target="_blank" rel="noopener noreferrer">
+                  ₹ 15,000/-
+                  <span>Tap to Book Premium Engagement</span>
+                </a>
+                <button type="button" class="select-plan-btn" data-package="Engagement: Premium Package (₹15,000/-)">Customize Date &amp; Venue &rarr;</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 3. WEDDING (Using Your Real Wedding Photos) -->
+        <div class="package-group" id="wedding-group" data-group="wedding">
+          <div class="group-header">
+            <span class="group-kicker">Full Event Coverage</span>
+            <h3 class="group-title">Wedding Packages</h3>
+          </div>
+          <div class="packages-grid">
+            <article class="package-card">
+              <img class="arch-photo" src="photos/wedding6.jpg"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1741201864962-c0954eb8974a?auto=format&fit=crop&w=800&q=80';"
+                   alt="Classic Maharashtrian Wedding Photography" />
+              <div class="badge-wrap"><div class="tier-badge" aria-hidden="true">&#9825;</div></div>
+              <div class="card-content">
+                <h4 class="tier-title">CLASSIC</h4>
+                <div class="tier-sub">&mdash; Wedding Day &mdash;</div>
+                <ul class="feature-list">
+                  <li><span class="feature-dot">&#10022;</span> Traditional Photo + Video (2 Crew)</li>
+                  <li><span class="feature-dot">&#10022;</span> Full Wedding Day Coverage (Up to 8 Hrs)</li>
+                  <li><span class="feature-dot">&#10022;</span> 200+ Color-Graded Edited Photos</li>
+                  <li><span class="feature-dot">&#10022;</span> Full-Length Edited Wedding Video</li>
+                  <li><span class="feature-dot">&#10022;</span> 1 Wedding Highlight Reel (60 sec)</li>
+                  <li><span class="feature-dot">&#10022;</span> Digital Delivery on Google Drive</li>
+                </ul>
+                <a class="price-banner" href="https://wa.me/917841845178?text=Hi%20Rutik%20Photography,%20I%20want%20to%20book%20the%20Classic%20Wedding%20Package%20(%E2%82%B924,999/-)." target="_blank" rel="noopener noreferrer">
+                  ₹ 24,999/-
+                  <span>Tap to Book Classic Wedding</span>
+                </a>
+                <button type="button" class="select-plan-btn" data-package="Wedding: Classic Package (₹24,999/-)">Customize Date &amp; Events &rarr;</button>
+              </div>
+            </article>
+
+            <article class="package-card featured">
+              <span class="popular-ribbon">Best Value</span>
+              <img class="arch-photo" src="photos/wedding3.jpg"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1794599094083-db2a19668f81?auto=format&fit=crop&w=800&q=80';"
+                   alt="Royal Wedding Photography by Rutik Photography" />
+              <div class="badge-wrap"><div class="tier-badge" aria-hidden="true">&#9813;</div></div>
+              <div class="card-content">
+                <h4 class="tier-title">ROYAL</h4>
+                <div class="tier-sub">&mdash; Haldi + Wedding &mdash;</div>
+                <ul class="feature-list">
+                  <li><span class="feature-dot">&#10022;</span> Candid + Traditional Photography</li>
+                  <li><span class="feature-dot">&#10022;</span> Traditional Video + Cinematic Teaser</li>
+                  <li><span class="feature-dot">&#10022;</span> Haldi, Mehndi &amp; Wedding Coverage</li>
+                  <li><span class="feature-dot">&#10022;</span> 350+ Edited Photos + 2 Reels</li>
+                  <li><span class="feature-dot">&#10022;</span> 3–5 Min Cinematic Wedding Film</li>
+                  <li><span class="feature-dot">&#10022;</span> 30-Page Premium Karizma Album</li>
+                  <li><span class="feature-dot">&#10022;</span> All RAW &amp; Edited Data on Drive</li>
+                </ul>
+                <a class="price-banner" href="https://wa.me/917841845178?text=Hi%20Rutik%20Photography,%20I%20want%20to%20book%20the%20Royal%20Wedding%20Package%20(%E2%82%B939,999/-)." target="_blank" rel="noopener noreferrer">
+                  ₹ 39,999/-
+                  <span>Tap to Book Royal Wedding</span>
+                </a>
+                <button type="button" class="select-plan-btn" data-package="Wedding: Royal Package (₹39,999/-)">Customize Date &amp; Events &rarr;</button>
+              </div>
+            </article>
+
+            <article class="package-card">
+              <img class="arch-photo" src="photos/wedding4.jpg"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1753687748127-f8051b69e20b?auto=format&fit=crop&w=800&q=80';"
+                   alt="Grand Signature Wedding Photography" />
+              <div class="badge-wrap"><div class="tier-badge" aria-hidden="true">&#10022;</div></div>
+              <div class="card-content">
+                <h4 class="tier-title">GRAND</h4>
+                <div class="tier-sub">&mdash; Full Celebration &mdash;</div>
+                <ul class="feature-list">
+                  <li><span class="feature-dot">&#10022;</span> Candid + Traditional Photo &amp; Cinema Team</li>
+                  <li><span class="feature-dot">&#10022;</span> Drone Coverage (Baraat &amp; Venue)</li>
+                  <li><span class="feature-dot">&#10022;</span> Haldi, Sangeet, Wedding &amp; Reception</li>
+                  <li><span class="feature-dot">&#10022;</span> 500+ Edited Photos + 3 Reels</li>
+                  <li><span class="feature-dot">&#10022;</span> 5–8 Min Cinematic Film + Full Video</li>
+                  <li><span class="feature-dot">&#10022;</span> 40-Page Luxury Layflat Album + Mini Book</li>
+                  <li><span class="feature-dot">&#10022;</span> Couple Frame + All RAW Data</li>
+                </ul>
+                <a class="price-banner" href="https://wa.me/917841845178?text=Hi%20Rutik%20Photography,%20I%20want%20to%20book%20the%20Grand%20Signature%20Wedding%20Package%20(%E2%82%B959,999/-)." target="_blank" rel="noopener noreferrer">
+                  ₹ 59,999/-
+                  <span>Tap to Book Grand Wedding</span>
+                </a>
+                <button type="button" class="select-plan-btn" data-package="Wedding: Grand Signature Package (₹59,999/-)">Customize Date &amp; Events &rarr;</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 4. BIRTHDAY, MODEL & OTHER SHOOTS -->
+        <div class="package-group" id="other-shoots-group" data-group="other">
+          <div class="group-header">
+            <span class="group-kicker">Celebrations, Fashion &amp; Milestones</span>
+            <h3 class="group-title">Birthday, Model &amp; Other Shoots</h3>
+          </div>
+
+          <div class="packages-grid">
+            <article class="package-card">
+              <img class="arch-photo" src="https://images.unsplash.com/photo-1774290687158-e6421d0f7900?auto=format&fit=crop&w=800&q=80" alt="Birthday Celebration Cake and Party Photography" />
+              <div class="badge-wrap"><div class="tier-badge" aria-hidden="true">&#9733;</div></div>
+              <div class="card-content">
+                <h4 class="tier-title">BIRTHDAY</h4>
+                <div class="tier-sub">&mdash; Celebration Shoot &mdash;</div>
+                <ul class="feature-list">
+                  <li><span class="feature-dot">&#10022;</span> Cake Cutting, Decor &amp; Candid Moments</li>
+                  <li><span class="feature-dot">&#10022;</span> Up to 3–4 Hours Party Coverage</li>
+                  <li><span class="feature-dot">&#10022;</span> 60+ Color-Graded Edited Photos</li>
+                  <li><span class="feature-dot">&#10022;</span> 1 Birthday Highlight Reel (Up to 30 sec)</li>
+                  <li><span class="feature-dot">&#10022;</span> 1 Digital Birthday Poster / Invite</li>
+                  <li><span class="feature-dot">&#10022;</span> Soft Copies Delivered on Google Drive</li>
+                </ul>
+                <a class="price-banner" href="https://wa.me/917841845178?text=Hi%20Rutik%20Photography,%20I%20want%20to%20book%20the%20Birthday%20Celebration%20Shoot%20Package%20(%E2%82%B93,999/-)." target="_blank" rel="noopener noreferrer">
+                  ₹ 3,999/-
+                  <span>Tap to Book Birthday Shoot</span>
+                </a>
+                <button type="button" class="select-plan-btn" data-package="Birthday Celebration Shoot (₹3,999/-)">Customize Time &amp; Venue &rarr;</button>
+              </div>
+            </article>
+
+            <article class="package-card featured">
+              <span class="popular-ribbon">Creator Favorite</span>
+              <img class="arch-photo" src="https://images.unsplash.com/photo-1758613654707-8bdab92f711d?auto=format&fit=crop&w=800&q=80" alt="Fashion Model Studio and Portrait Shoot" />
+              <div class="badge-wrap"><div class="tier-badge" aria-hidden="true">&#9830;</div></div>
+              <div class="card-content">
+                <h4 class="tier-title">MODEL SHOOT</h4>
+                <div class="tier-sub">&mdash; Portfolio &amp; Reels &mdash;</div>
+                <ul class="feature-list">
+                  <li><span class="feature-dot">&#10022;</span> Indoor / Outdoor Editorial Lookbook</li>
+                  <li><span class="feature-dot">&#10022;</span> Guided Posing &amp; Expression Coaching</li>
+                  <li><span class="feature-dot">&#10022;</span> 20 High-End Retouched Portraits</li>
+                  <li><span class="feature-dot">&#10022;</span> 2 Fashion / Transition Reels (30 sec)</li>
+                  <li><span class="feature-dot">&#10022;</span> 2–3 Outfit / Look Changes</li>
+                  <li><span class="feature-dot">&#10022;</span> RAW + Edited Photos via Drive</li>
+                </ul>
+                <a class="price-banner" href="https://wa.me/917841845178?text=Hi%20Rutik%20Photography,%20I%20want%20to%20book%20the%20Model%20/%20Portfolio%20Shoot%20Package%20(%E2%82%B94,499/-)." target="_blank" rel="noopener noreferrer">
+                  ₹ 4,499/-
+                  <span>Tap to Book Model Shoot</span>
+                </a>
+                <button type="button" class="select-plan-btn" data-package="Model / Portfolio Shoot (₹4,499/-)">Customize Looks &amp; Location &rarr;</button>
+              </div>
+            </article>
+
+            <article class="package-card">
+              <img class="arch-photo" src="https://images.unsplash.com/photo-1751984034183-9fd9c38acc7d?auto=format&fit=crop&w=800&q=80" alt="Maternity, Baby Shower and Special Event Photography" />
+              <div class="badge-wrap"><div class="tier-badge" aria-hidden="true">&#10047;</div></div>
+              <div class="card-content">
+                <h4 class="tier-title">OTHER SHOOTS</h4>
+                <div class="tier-sub">&mdash; Milestones &amp; Events &mdash;</div>
+                <ul class="feature-list">
+                  <li><span class="feature-dot">&#10022;</span> Maternity &amp; Baby Shower (Dohale Jevan)</li>
+                  <li><span class="feature-dot">&#10022;</span> Kids Portraits &amp; Naming Ceremony</li>
+                  <li><span class="feature-dot">&#10022;</span> Anniversary &amp; Family Get-Togethers</li>
+                  <li><span class="feature-dot">&#10022;</span> Housewarming, Cultural &amp; Corporate Events</li>
+                  <li><span class="feature-dot">&#10022;</span> Product, Brand &amp; Instagram Reel Shoots</li>
+                  <li><span class="feature-dot">&#10022;</span> Flexible Half-Day / Full-Day Options</li>
+                </ul>
+                <a class="price-banner" href="https://wa.me/917841845178?text=Hi%20Rutik%20Photography,%20I%20want%20to%20enquire%20about%20a%20Maternity%20/%20Baby%20Shower%20/%20Event%20/%20Other%20Shoot." target="_blank" rel="noopener noreferrer">
+                  From ₹ 3,499/-
+                  <span>Tap for Custom Shoot Quote</span>
+                </a>
+                <button type="button" class="select-plan-btn" data-package="Other Shoot (Maternity / Baby Shower / Event)">Select Shoot Type Below &rarr;</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="quick-shoots-strip">
+            <div class="quick-shoots-label">Quick Book Specific Shoots — Tap Any Category:</div>
+            <div class="quick-tags">
+              <button type="button" class="quick-tag-btn" data-package="Engagement: Custom Package (₹10,000 – ₹15,000/-)">Engagement (₹10k–₹15k)</button>
+              <button type="button" class="quick-tag-btn" data-package="Other Shoot: Maternity Shoot">Maternity Shoot</button>
+              <button type="button" class="quick-tag-btn" data-package="Other Shoot: Baby Shower (Dohale Jevan)">Baby Shower (Dohale Jevan)</button>
+              <button type="button" class="quick-tag-btn" data-package="Other Shoot: Kids &amp; Naming Ceremony">Kids &amp; Naming Ceremony</button>
+              <button type="button" class="quick-tag-btn" data-package="Other Shoot: Event / Housewarming">Housewarming &amp; Events</button>
+              <button type="button" class="quick-tag-btn" data-package="Other Shoot: Product / Commercial Reels">Product &amp; Brand Reels</button>
+            </div>
+          </div>
+        </div>
+
+        <p class="package-footnote">
+          <strong>Custom packages &amp; Pre-Wedding + Engagement + Wedding combo deals available!</strong><br />
+          *Package cost may vary based on travel distance, extra hours, album upgrades, or location entry charges.
+        </p>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="section section-soft" id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-script">Moments Captured</div>
+          <h2 class="section-title">Portfolio Highlights</h2>
+          <p class="section-desc">Tap any photo to open full-screen preview. Featuring real Wedding captures by Rutik Photography.</p>
+        </div>
+
+        <div class="gallery-filters" role="tablist" aria-label="Portfolio categories">
+          <button type="button" class="filter-btn active" data-filter="all">All Shoots (12)</button>
+          <button type="button" class="filter-btn" data-filter="wedding">Wedding (6)</button>
+          <button type="button" class="filter-btn" data-filter="prewedding">Pre-Wedding</button>
+          <button type="button" class="filter-btn" data-filter="birthday">Birthday</button>
+          <button type="button" class="filter-btn" data-filter="model-other">Model &amp; Maternity</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- YOUR 6 REAL WEDDING PHOTOS -->
+          <div class="gallery-item" data-category="wedding" data-caption="Happy Wedding Memories — Rutik Photography">
+            <img src="photos/wedding1.jpg"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1794599094083-db2a19668f81?auto=format&fit=crop&w=800&q=80';"
+                 alt="Happy Wedding collage by Rutik Photography" />
+            <div class="gallery-caption">Happy Wedding Memories</div>
+          </div>
+
+          <div class="gallery-item" data-category="wedding" data-caption="Infinite Love — Traditional Maharashtrian Couple">
+            <img src="photos/wedding2.jpg"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1741201864962-c0954eb8974a?auto=format&fit=crop&w=800&q=80';"
+                 alt="Infinite Wedding Portrait" />
+            <div class="gallery-caption">Infinite — Wedding Frame</div>
+          </div>
+
+          <div class="gallery-item" data-category="wedding" data-caption="Rohan &amp; Pooja — Wedding Stage Portrait by Rutik Photography">
+            <img src="photos/wedding3.jpg"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1753687748127-f8051b69e20b?auto=format&fit=crop&w=800&q=80';"
+                 alt="Rohan and Pooja Wedding Portrait" />
+            <div class="gallery-caption">Rohan &amp; Pooja</div>
+          </div>
+
+          <div class="gallery-item" data-category="wedding" data-caption="Timeless Couple Portrait — Traditional Attire">
+            <img src="photos/wedding4.jpg"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80';"
+                 alt="Intimate Wedding Couple Portrait" />
+            <div class="gallery-caption">Timeless Bridal Portrait</div>
+          </div>
+
+          <div class="gallery-item" data-category="wedding" data-caption="Mamta &amp; Nishant — Wedding Congratulations Poster by Rutik Photography">
+            <img src="photos/wedding5.jpg"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1794599094083-db2a19668f81?auto=format&fit=crop&w=800&q=80';"
+                 alt="Mamta and Nishant Wedding Portrait" />
+            <div class="gallery-caption">Mamta &amp; Nishant</div>
+          </div>
+
+          <div class="gallery-item" data-category="wedding" data-caption="Outdoor Traditional Couple Portrait — Rutik Photography">
+            <img src="photos/wedding6.jpg"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1741201864962-c0954eb8974a?auto=format&fit=crop&w=800&q=80';"
+                 alt="Outdoor Traditional Wedding Couple" />
+            <div class="gallery-caption">Traditional Outdoor Shoot</div>
+          </div>
+
+          <!-- PRE-WEDDING, BIRTHDAY & MODEL PHOTOS -->
+          <div class="gallery-item" data-category="prewedding" data-caption="Golden Hour Romance — Pre-Wedding Couple Session">
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" alt="Golden hour couple session" />
+            <div class="gallery-caption">Pre-Wedding Portrait</div>
+          </div>
+
+          <div class="gallery-item" data-category="prewedding" data-caption="Outdoor Morning Light — Save the Date Couple Shoot">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Outdoor couple shoot" />
+            <div class="gallery-caption">Save-the-Date Shoot</div>
+          </div>
+
+          <div class="gallery-item" data-category="birthday" data-caption="Birthday Celebration — Cake, Balloons &amp; Decor Coverage">
+            <img src="https://images.unsplash.com/photo-1774290687158-e6421d0f7900?auto=format&fit=crop&w=800&q=80" alt="Birthday cake and balloon setup" />
+            <div class="gallery-caption">Birthday Celebration</div>
+          </div>
+
+          <div class="gallery-item" data-category="birthday" data-caption="Party Highlights — Candid Birthday Moments &amp; Reels">
+            <img src="https://images.unsplash.com/photo-1748017331249-98503e8b30a8?auto=format&fit=crop&w=800&q=80" alt="Birthday party cake and drinks" />
+            <div class="gallery-caption">Birthday Party &amp; Cake</div>
+          </div>
+
+          <div class="gallery-item" data-category="model-other" data-caption="Editorial Lookbook — Studio &amp; Outdoor Model Shoot">
+            <img src="https://images.unsplash.com/photo-1758613654707-8bdab92f711d?auto=format&fit=crop&w=800&q=80" alt="Fashion model photoshoot" />
+            <div class="gallery-caption">Model Portfolio Shoot</div>
+          </div>
+
+          <div class="gallery-item" data-category="model-other" data-caption="Maternity &amp; Family Milestones — Natural Couple Framing">
+            <img src="https://images.unsplash.com/photo-1751984034183-9fd9c38acc7d?auto=format&fit=crop&w=800&q=80" alt="Maternity couple photoshoot" />
+            <div class="gallery-caption">Maternity Milestones</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-script">Simple &amp; Stress-Free</div>
+          <h2 class="section-title">How Your Booking Works</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-num">01</div>
+            <h3>Choose Shoot Type</h3>
+            <p>Pick Pre-Wedding, Engagement, Wedding, Birthday, Model, Maternity, or a custom package.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">02</div>
+            <h3>Plan Dates &amp; Concepts</h3>
+            <p>We align timings, posing/outfit ideas, venue details, and reel concepts with you.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">03</div>
+            <h3>Shoot Day</h3>
+            <p>Our crew captures every candid smile, ritual, party moment, and editorial frame.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">04</div>
+            <h3>Edits &amp; Delivery</h3>
+            <p>Receive curated edited photos, posters, reels, films, and printed albums on time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING FORM & FAQ -->
+    <section class="section section-soft" id="book">
+      <div class="container booking-layout">
+        <div class="booking-card">
+          <h3>Reserve Your Shoot Date</h3>
+          <p class="sub">Fill in your details below — it opens a pre-filled booking inquiry directly in our WhatsApp chat.</p>
+
+          <form id="bookingForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="coupleName">Your Name / Couple Names *</label>
+                <input type="text" id="coupleName" placeholder="e.g., Rohan &amp; Pooja" required />
+              </div>
+
+              <div class="form-group">
+                <label for="clientPhone">Phone / WhatsApp *</label>
+                <input type="tel" id="clientPhone" placeholder="e.g., 98XXXXXXXX" required />
+              </div>
+
+              <div class="form-group">
+                <label for="shootDate">Event / Shoot Date</label>
+                <input type="date" id="shootDate" />
+              </div>
+
+              <div class="form-group">
+                <label for="packageSelect">Select Shoot / Package *</label>
+                <select id="packageSelect" required>
+                  <optgroup label="Pre-Wedding Packages">
+                    <option value="Pre-Wedding: Silver Package (₹4,999/-)">Silver Pre-Wedding — ₹4,999/-</option>
+                    <option value="Pre-Wedding: Gold Package (₹9,999/-)" selected>Gold Pre-Wedding — ₹9,999/-</option>
+                    <option value="Pre-Wedding: Diamond Package (₹14,999/-)">Diamond Pre-Wedding — ₹14,999/-</option>
+                  </optgroup>
+                  <optgroup label="Engagement Packages">
+                    <option value="Engagement: Classic Package (₹10,000/-)">Classic Engagement — ₹10,000/-</option>
+                    <option value="Engagement: Premium Package (₹15,000/-)">Premium Engagement — ₹15,000/-</option>
+                    <option value="Engagement: Custom Package (₹10,000 – ₹15,000/-)">Custom Engagement (₹10,000–₹15,000/-)</option>
+                  </optgroup>
+                  <optgroup label="Wedding Packages">
+                    <option value="Wedding: Classic Package (₹24,999/-)">Classic Wedding — ₹24,999/-</option>
+                    <option value="Wedding: Royal Package (₹39,999/-)">Royal Wedding — ₹39,999/-</option>
+                    <option value="Wedding: Grand Signature Package (₹59,999/-)">Grand Signature Wedding — ₹59,999/-</option>
+                  </optgroup>
+                  <optgroup label="Birthday &amp; Model Shoots">
+                    <option value="Birthday Celebration Shoot (₹3,999/-)">Birthday Celebration Shoot — ₹3,999/-</option>
+                    <option value="Model / Portfolio Shoot (₹4,499/-)">Model / Portfolio Shoot — ₹4,499/-</option>
+                  </optgroup>
+                  <optgroup label="Other Shoots">
+                    <option value="Other Shoot: Maternity Shoot">Maternity Shoot</option>
+                    <option value="Other Shoot: Baby Shower (Dohale Jevan)">Baby Shower (Dohale Jevan)</option>
+                    <option value="Other Shoot: Kids &amp; Naming Ceremony">Kids &amp; Naming Ceremony</option>
+                    <option value="Other Shoot: Event / Housewarming">Housewarming &amp; Events</option>
+                    <option value="Other Shoot: Product / Commercial Reels">Product &amp; Brand Reels</option>
+                    <option value="Other Shoot (Maternity / Baby Shower / Event)">Other Custom Shoot</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="shootLocation">Venue / Shoot Location</label>
+                <input type="text" id="shootLocation" placeholder="e.g., Vikramgad, Palghar, Banquet Hall, Studio, Outdoor..." />
+              </div>
+
+              <div class="form-group full">
+                <label for="shootNotes">Event Timings &amp; Special Requests</label>
+                <textarea id="shootNotes" rows="3" placeholder="Mention ring ceremony timing, birthday timing, Haldi/Sangeet dates, drone, or custom requests..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+              Send Booking Request on WhatsApp &rarr;
+            </button>
+          </form>
+        </div>
+
+        <div class="faq-box">
+          <h3>Frequently Asked Questions</h3>
+
+          <div class="faq-item open">
+            <button type="button" class="faq-question" aria-expanded="true">
+              <span>What is included in the ₹10,000 – ₹15,000 Engagement packages?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Our Classic Engagement (₹10,000/-) covers full traditional photo &amp; video, 100+ edited photos, full event video, and 1 reel. Premium Engagement (₹15,000/-) adds candid photography, couple portraits, 2 reels, a 2–3 min cinematic teaser, Save-the-Date poster, and all RAW data.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Do you cover Birthday parties &amp; Model shoots at our location?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes! For birthday parties we come directly to your home, hall, or resort. For model shoots, we shoot at scenic outdoor spots, cafes, or studios based on your lookbook theme.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Do you travel outside Vikramgad &amp; Palghar?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes, we travel across Palghar, Thane, Mumbai, Nashik, and destination locations across Maharashtra. Travel charges depend on distance.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>How soon do we receive our photos &amp; reels?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Engagement, Birthday, Model, and Pre-Wedding highlights &amp; edited photos are delivered within 5–10 days. Full Wedding films and printed albums take 3–5 weeks after photo selection.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Rutik Photography</div>
+          <p class="footer-text">Capturing every milestone — Pre-Wedding, Engagement, Weddings, Birthday Celebrations, Model Portfolios, Maternity &amp; Events.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Packages</h4>
+          <ul>
+            <li><a href="#prewedding-group">Pre-Wedding (₹4,999+)</a></li>
+            <li><a href="#engagement-group">Engagement (₹10k–₹15k)</a></li>
+            <li><a href="#wedding-group">Wedding (₹24,999+)</a></li>
+            <li><a href="#other-shoots-group">Birthday &amp; Model Shoots</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect With Us</h4>
+          <ul>
+            <li><a href="tel:+917841845178">&#9742; +91 7841845178</a></li>
+            <li><a href="https://instagram.com/rutik_photography" target="_blank" rel="noopener noreferrer">&#9737; @rutik_photography</a></li>
+            <li>&#9906; Vikramgad, Palghar, Maharashtra</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Rutik Photography. All rights reserved.</span>
+        <span>*Package cost will differ as per location charges &amp; distance.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image Preview">
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close Preview">&times;</button>
+      <img id="lightboxImg" src="" alt="" />
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP -->
+  <a class="floating-wa" href="https://wa.me/917841845178?text=Hi%20Rutik%20Photography,%20I%20would%20like%20to%20enquire%20about%20booking%20a%20shoot!" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    &#9993; Book on WhatsApp
+  </a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile Menu
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Package Tabs
+    const pkgTabBtns = document.querySelectorAll('.pkg-tab-btn');
+    const pkgGroups = document.querySelectorAll('.package-group');
+    function setPackageTab(tab) {
+      pkgTabBtns.forEach(b => b.classList.toggle('active', b.dataset.pkgTab === tab));
+      pkgGroups.forEach(group => {
+        group.classList.toggle('hidden', tab !== 'all' && group.dataset.group !== tab);
+      });
+    }
+    pkgTabBtns.forEach(btn => btn.addEventListener('click', () => setPackageTab(btn.dataset.pkgTab)));
+    document.querySelectorAll('[data-jump-tab]').forEach(link => {
+      link.addEventListener('click', () => setPackageTab('all'));
+    });
+
+    // Portfolio Filters
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        galleryItems.forEach(item => {
+          item.classList.toggle('hidden', filter !== 'all' && item.dataset.category !== filter);
+        });
+      });
+    });
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxClose = document.getElementById('lightboxClose');
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        lightboxImg.src = img.currentSrc || img.src;
+        lightboxImg.alt = img.alt;
+        lightboxCaption.textContent = item.dataset.caption || img.alt;
+        lightbox.classList.add('active');
+      });
+    });
+    function closeLightbox() { lightbox.classList.remove('active'); }
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    // Select Package or Quick-Tag -> Scroll & Pre-fill Booking Form
+    const packageSelect = document.getElementById('packageSelect');
+    document.querySelectorAll('.select-plan-btn, .quick-tag-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        packageSelect.value = btn.dataset.package;
+        document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('coupleName').focus({ preventScroll: true });
+      });
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.toggle('open');
+        btn.setAttribute('aria-expanded', isOpen);
+      });
+    });
+
+    // WhatsApp Booking Form
+    document.getElementById('bookingForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const name = document.getElementById('coupleName').value.trim();
+      const phone = document.getElementById('clientPhone').value.trim();
+      const date = document.getElementById('shootDate').value || 'Flexible';
+      const pkg = packageSelect.value;
+      const location = document.getElementById('shootLocation').value.trim() || 'To be decided';
+      const notes = document.getElementById('shootNotes').value.trim() || 'None';
+
+      const message =
+        `Hi Rutik Photography! I would like to book a shoot.%0A%0A` +
+        `*Name:* ${encodeURIComponent(name)}%0A` +
+        `*Phone:* ${encodeURIComponent(phone)}%0A` +
+        `*Package / Shoot:* ${encodeURIComponent(pkg)}%0A` +
+        `*Preferred Date:* ${encodeURIComponent(date)}%0A` +
+        `*Location / Venue:* ${encodeURIComponent(location)}%0A` +
+        `*Notes:* ${encodeURIComponent(notes)}`;
+
+      window.open(`https://wa.me/917841845178?text=${message}`, '_blank', 'noopener,noreferrer');
+    });
+  </script>
+</body>
+</html>
